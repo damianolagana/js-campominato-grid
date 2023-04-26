@@ -23,10 +23,21 @@ function generateGrid(){
         const numero = numeri
         const newElement = document.createElement("div");
         newElement.classList.add("square");
-        newElement.innerText = numero;
+       
 
         gridBox.append(newElement);
+        newElement.innerText = numero;
 
+
+        newElement.addEventListener("click",function(){
+            
+            
+            newElement.classList.add("clicked")
+
+            newElement.classList.toggle("clicked")
+        })
+
+        
 
 
     } 
