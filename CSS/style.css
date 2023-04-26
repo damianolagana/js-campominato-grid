@@ -56,6 +56,10 @@ footer{
     align-items: center;
 }
 
+.clicked{
+    background-color: #dab147;
+}
+
 #btnPlay{
     cursor: pointer;
 }
