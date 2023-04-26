@@ -1,0 +1,37 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+main{
+    height: 100vh;
+}
+
+
+/******* NAV BAR *******/
+
+#navBar{
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+
+}
+
+/***** CONTAINER GRID  ******/
+
+#container{
+    background-color: #7fffd4;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+
+}
+
+#grid{
+    height: 500px;
+    width: 500px;
+    margin: 0 auto;
+    border: 2px black solid;
+    border-radius: 2%;
+}
