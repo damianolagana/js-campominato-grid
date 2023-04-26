@@ -6,6 +6,7 @@
 
 body{
     height:100vh;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 
@@ -44,14 +45,19 @@ footer{
 }
 
 .square{
-    width: calc(100% / 8);
-    height: calc(100% / 8);
+    width: calc(100% / 10);
+    height: calc(100% / 10);
     border: 2px black solid;
     border-radius: 10%;
+    font-weight: 600;
 
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+#btnPlay{
+    cursor: pointer;
 }
 
 
