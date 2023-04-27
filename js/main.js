@@ -18,7 +18,7 @@ btnGenerate.addEventListener("click",function(){
 
 function generateGrid(){
 
-    let cellQuantity = 100
+    let cellQuantity = document.getElementById("levels").value;
     let cellNumberSide = Math.ceil(Math.sqrt(cellQuantity)); 
 
     for(let i = 1 ; i <= cellQuantity ; i++){
