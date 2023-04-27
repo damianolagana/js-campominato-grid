@@ -19,18 +19,23 @@ btnGenerate.addEventListener("click",function(){
 function generateGrid(){
 
     let cellQuantity = 100
-    let cellNumberSide = Math.sqrt(cellQuantity);
+    let cellNumberSide = Math.ceil(Math.sqrt(cellQuantity)); 
 
-    for(let numeri = 1 ; numeri <= cellQuantity ; numeri++){
+    for(let i = 1 ; i <= cellQuantity ; i++){
         
-        const numero = numeri
        
         const newElement = document.createElement("div");
         newElement.classList.add("square");
         newElement.style.width =`calc(100% / ${cellNumberSide})`;
         newElement.style.height =`calc(100% / ${cellNumberSide})`;
-        newElement.innerText = numero;
+        newElement.innerText = i;
 
+        newElement.addEventListener("click",function(){
+            this.classList.toggle("clicked")
+        });
+
+
+    
         gridBox.append(newElement);
        
     } 
